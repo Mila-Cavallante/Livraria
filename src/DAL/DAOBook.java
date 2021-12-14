@@ -1,14 +1,13 @@
 
 package DAL;
 
-import java.sql.Statement;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import livraria.Book;
 import java.sql.ResultSet;
-
 
 /**
  *
@@ -25,8 +24,8 @@ public class DAOBook {
         String query = "SELECT * from library.book " + params; //buscando todos os atributos
         
         try{
-            PreparedStatement prep = conect.getConexao().prepareStatement(query); //chama query
-            ResultSet lista = prep.executeQuery();
+            PreparedStatement prep = conect.getConexao().prepareStatement(query); 
+            ResultSet lista = prep.executeQuery();//retornando os dados do banco 
             
             while(lista.next()){
                 Book book = new Book();
@@ -40,9 +39,10 @@ public class DAOBook {
         catch(SQLException e){
            e.printStackTrace();
         }
-        return listaLivros;
+        return listaLivros; //retornando a lista
     }
     
+    /*
     //método incluir
      public void incluir (Book book) throws SQLException{ //throws é o try/catch
         conect.conectar();
@@ -54,14 +54,6 @@ public class DAOBook {
         prep.execute();
         conect.getConexao().commit();
         conect.close();                 
-    }
+    }*/
      
 }//fim da classe
-    
-    
-    
-    
-    
-    
-    
-
