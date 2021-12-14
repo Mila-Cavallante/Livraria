@@ -9,6 +9,14 @@ package livraria;
  *
  * @author camil
  */
-public class Editorial extends User{ //PQ User?
-    
+public class Editorial extends User{ 
+    private int cnpj;
+
+    public int getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(int cnpj) {
+        this.cnpj = cnpj;
+    }
 }

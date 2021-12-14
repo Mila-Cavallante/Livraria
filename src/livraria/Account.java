@@ -5,8 +5,9 @@ package livraria;
  *
  * @author camil
  */
+//Joguei os atributos na model user
 public class Account {
-    private String emailAddress;
+   /* private String emailAddress;
     private long id;
     private String password; 
     private long idTemp;
@@ -53,5 +54,5 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
-    }
+    }*/
 }

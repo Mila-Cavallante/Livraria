@@ -6,7 +6,7 @@ package livraria;
  * @author camil
  */
 public class BillingInfo {
-    private Account account;
+   /* private Account account;
     private String text;
 
     public Account getAccount() {
@@ -23,5 +23,5 @@ public class BillingInfo {
 
     public void setText(String text) {
         this.text = text;
-    }
+    }*/
 }

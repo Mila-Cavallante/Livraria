@@ -1,5 +1,5 @@
 //Fazer a conexão com o Banco de dados
-package DAO;
+package DAL;
 
 import java.util.Properties;
 import java.sql.DriverManager;

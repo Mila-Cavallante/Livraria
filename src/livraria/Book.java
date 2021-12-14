@@ -7,8 +7,9 @@ package livraria;
  */
 public class Book {
     private String title;
-    private Author author;
-    private Publisher publisher;
+    private String author;
+    private int IDBook;
+
 
     public String getTitle() {
         return title;
@@ -18,19 +19,20 @@ public class Book {
         this.title = title;
     }
 
-    public Author getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(Author author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
-    public Publisher getPublisher() {
-        return publisher;
+    public int getIDBook() {
+        return IDBook;
     }
 
-    public void setPublisher(Publisher publisher) {
-        this.publisher = publisher;
+    public void setIDBook(int IDBook) {
+        this.IDBook = IDBook;
     }
+   
 }
